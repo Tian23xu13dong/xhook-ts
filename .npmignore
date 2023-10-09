@@ -1,0 +1,9 @@
+.github/
+example/
+src/
+tests/
+CONTRIBUTING.md
+index.html
+package-lock.json
+playwright.config.ts
+rollup.config.js

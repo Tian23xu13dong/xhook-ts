@@ -1,0 +1,9 @@
+/dist
+/es
+/example
+/lib
+/node_modules
+/.idea
+/.vscode
+LICENSE
+package-lock.json

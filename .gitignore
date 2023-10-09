@@ -1,0 +1,11 @@
+node_modules
+bower_components
+
+.idea
+.vscode
+.DS_Store
+
+# ouput dir
+dist/
+lib/
+es/
