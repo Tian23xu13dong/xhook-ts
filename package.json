@@ -6,7 +6,7 @@
   "module": "es/main.js",
   "scripts": {
     "start": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rimraf -rf ./dist ./es ./lib && rollup -c"
   },
   "repository": {
     "type": "git",
@@ -27,10 +27,12 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "rimraf": "^5.0.5",
     "@rollup/plugin-typescript": "^9.0.2",
     "prettier": "2.7.1",
     "rollup": "^2.77.2",
     "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-dts": "^6.1.0",
     "tslib": "^2.4.1",
     "typescript": "^4.8.4"
   }

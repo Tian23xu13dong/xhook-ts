@@ -20,7 +20,7 @@ export type XHookRequestHandler = (
 // (not the best decision in hindsight)
 const xhook = hooks;
 
-type xhook = EventEmitter & {
+type xhook = typeof EventEmitter & {
   before: XHookRequestHandler;
   after: XHookRequestHandler;
   enable: () => void;
@@ -28,6 +28,7 @@ type xhook = EventEmitter & {
   headers: Record<string, string>;
   XMLHttpRequest: typeof XMLHttpRequest;
   fetch: typeof fetch;
+  EventEmitter: typeof EventEmitter;
 };
 
 xhook.EventEmitter = EventEmitter;
